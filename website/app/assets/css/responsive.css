@@ -1,0 +1,37 @@
+@media (min-width: 410px) { /*mobile*/
+
+	.promoBackground{
+	  background-color: #FFFFFF;
+	  background-image: url('../images/lightBlueCircutBackground.png');
+	  background-repeat: no-repeat;
+	  background-size: auto 900px;
+
+	}
+
+}
+
+@media (min-width: 767px) { /*tablet*/
+
+}
+
+@media (min-width: 990px) { /*desktop*/
+	.features {
+	  padding: 0px 0 50px 0;
+	}
+
+	.promo .overview {
+	 	margin-top: 60px; 
+	}
+
+	.promo h3 {
+		margin-right: 80px;
+	}
+
+	.promoBackground{
+	  background-color: #FFFFFF;
+	  background-image: url('../images/lightBlueCircutBackground.png');
+	  background-repeat: no-repeat;
+	  background-size: auto 500px;
+
+	}
+}
