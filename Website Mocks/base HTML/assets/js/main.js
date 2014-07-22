@@ -1,5 +1,50 @@
 jQuery(document).ready(function($) {
 
+    /* ======= typeIcon Toggle ======= */
+    $('#maleOption').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-male');
+    });
+
+    $('#femaleOption').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-female');
+    });
+
+    $('#businessOption').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-bar-chart-o');
+    });
+
+    $('#technologyOption').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-floppy-o');
+    });
+
+    /* ======= Special Ability ======= */
+    $('#specialAbility1').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-male');
+    });
+
+    $('#femaleOption').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-female');
+    });
+
+    $('#businessOption').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-bar-chart-o');
+    });
+
+    $('#technologyOption').click(function(){
+        $('#typeIcon').removeClass();
+        $('#typeIcon').addClass('fa fa-floppy-o');
+    });
+
+
+    
+
     /* ======= Scrollspy ======= */
     $('body').scrollspy({ target: '#top', offset: 400});
    

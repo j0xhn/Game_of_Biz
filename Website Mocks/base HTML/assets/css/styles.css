@@ -6,9 +6,133 @@
 */
 /* ======= My Styles ======= */
 
-#editCard {
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+#editableCard {
   text-align: center;
   padding-top: 30px;
+  background-image: url('../images/blankCard.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 286px;
+  position: relative;
+}
+
+#editableCard p{
+  position: absolute;
+}
+
+#editableCard input, #editableCard textarea {
+  background: transparent;
+  border: none;
+  position: absolute;
+  padding: 0;
+}
+#editableCard input:focus, #editableCard textarea:focus {
+  outline: none; 
+}
+
+#cost{
+  top: 16px;
+  left: 19px;
+  font-size: 33px;
+  width: 50px;
+}
+
+#speed{
+  top: 239px;
+  left: 36px;
+  font-size: 33px;
+  width: 50px;
+}
+
+#talent {
+  top: 287px;
+  left: 36px;
+  font-size: 33px;
+  width: 50px;
+}
+
+#klout {
+  top: 335px;
+  left: 36px;
+  font-size: 33px;
+  width: 50px;
+}
+
+#playerName {
+  top: 20px;
+  left: 77px;
+  font-size: 18px;
+  width: 150px;
+}
+#typeDescription{
+  top: 40px;
+  left: 77px;
+  font-size: 12px;
+  width: 150px;
+}
+
+#cardType{
+  position: absolute;
+  padding: 2px;
+  top: 21px;
+  right: 24px;
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  font-size: 21px;
+  list-style: none;
+}
+#quote{
+  top: 339px;
+  left: 74px;
+  font-size: 12px;
+  width: 200px;
+}
+
+
+
+#specialAbilities {
+  position: absolute;
+  bottom: 82px;
+  left: 74px;
+}
+
+#specialAbilities div{
+  margin: 4px 0px;
+}
+
+#specialAbilities button{
+  padding: 6px 3px;
+  background-color: #fff;
+  line-height: 0;
+}
+
+#specialAbilities .btn-long {
+  width: 170px;
+  text-align: left;
+  background-color: transparent;
+}
+
+#specialAbilities .btn-long:focus {
+  outline: none;
+}
+
+#specialAbilities .dropdown-menu a{
+  text-align: left;
+  padding: 1px 5px;
+}
+
+
+
+#cardType .dropdown-menu{
+  text-align: left;
 }
 .headerTitle{
   width: 100%;

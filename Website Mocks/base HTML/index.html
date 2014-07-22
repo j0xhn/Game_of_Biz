@@ -30,7 +30,7 @@
 </head> 
 
 <body data-spy="scroll">
-    <!-- ******HEADER****** --> 
+<!-- ******HEADER****** --> 
     <header id="top" class="header navbar-fixed-top">  
         <div class="container">            
             <h1 class="logo pull-left">
@@ -61,7 +61,7 @@
         </div>
     </header><!--//header-->
     
-    <!-- ******PROMO****** --> 
+<!-- ******PROMO****** --> 
     <section id="promo" class="promo section offset-header promoBackground">
         <div class="container">
             <div class="row">
@@ -98,7 +98,7 @@
         </div><!--//container-->
     </section><!--//promo-->
     
-    <!-- ******FEATURES****** --> 
+<!-- ******FEATURES****** --> 
     <section id="features" class="features section">
         <div class="container">
             <div class="row">
@@ -133,16 +133,76 @@
         </div><!--//container-->
     </section><!--//features-->
     
-    <!-- ******HOW****** --> 
-    <section id="create" class="create section">
+<!-- ******CREATE****** --> 
+    <section id="create" class="create section" ng-app ng-controller="createCardCtrl">
         <div class="headerTitle">
             <h1>Create Personalized Card</h1>
         </div>
-        <div class="container">
-            <div id='editCard' class="mt">
-                <img src="assets/images/blankCard.jpg">
+        <div class="container center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Startup</button>
+              <button type="button" class="btn btn-default">Corporation</button>
             </div>
-            
+            <p>click to input your information</p>
+            <div id='editableCard' class="center">
+                <input id="playerName" ng-model="playerName"></input>
+                <input id="typeDescription" ng-model="typeDescription"></input>
+                <p id="cost">8</p>
+                <input id="typeDescription" ng-model="typeDescription"></input>
+                <div id='cardType'>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><i id="typeIcon" class="fa fa-male"></i></a>
+                        <ul class="dropdown-menu">
+                            <li id="maleOption"><a><i class="fa fa-male"></i> Male Character</a></li>
+                            <li id="femaleOption"><a><i class="fa fa-female"></i> Female Character</a></li>
+                            <li id="businessOption"><a><i class="fa fa-bar-chart-o"></i></i> Business</a></li>
+                            <li id="technologyOption"><a><i class="fa fa-floppy-o"></i></i> Technology</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <input id="speed" ng-model="speed"></input>
+                <input id="talent" ng-model="talent"></input>
+                <input id="klout" ng-model="klout"></input>
+
+                <!-- Special Abilities -->
+                <div id="specialAbilities" class="btn-group">
+                    <div id="specialAbility1">
+                        <button type="button" class="btn btn-sm btn-long" data-toggle="dropdown">{{specialAbility1}}</button>
+                        <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a>1H: +2 talent</a></li>
+                        <li><a>Pick Advantage or Efficiency</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="specialAbility2">
+                        <button type="button" class="btn btn-sm btn-long" data-toggle="dropdown">{{specialAbility2}}</button>
+                        <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a>2H: Respond 1 damage</a></li>
+                        <li><a>Another action</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="specialAbility2">
+                        <button type="button" class="btn btn-sm btn-long" data-toggle="dropdown">{{specialAbility3}}</button>
+                        <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a>3H: Negotiate 3 damage</a></li>
+                        <li><a>Another action</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <input id="typeDescription" ng-model="typeDescription"></input>
+
+                <textarea rows='3' id="quote" ng-model="quote"></textarea>
+            </div>
         </div><!--//container-->
     </section><!--//how-->
     
@@ -363,7 +423,7 @@
         </div><!--//container-->
     </section><!--//contact-->  
       
-    <!-- ******FOOTER****** --> 
+<!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container">
             <small class="copyright pull-left">Copyright &copy; 2014 Delta App</small>
@@ -373,7 +433,12 @@
             </ul>
         </div>
     </footer><!--//footer-->
-     
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script type="text/javascript" src="controllers/createCardCtrl.js"></script> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
